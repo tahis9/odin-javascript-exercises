@@ -3,9 +3,9 @@ const fibonacci = function(a) {
   if (a < 0 || !Number.isInteger(a)){
     return "OOPS"
   }
-  let result = [0];
-  if (a > 0 && Number.isInteger(a)){
-    result[1] = 1;
+  let result = [0,1];
+  if (a > 1 && Number.isInteger(a)){
+    // result[1] = 1;
     for (let i = 2; i <= a; i++) {
       result[i] = result[i-1] + result[i-2]
     }

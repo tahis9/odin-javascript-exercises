@@ -19,6 +19,9 @@ describe('fibonacci', () => {
   test('0th fibonacci number is 0', () => {
     expect(fibonacci(0)).toBe(0);
   });
+  test('1st fibonacci number is 1', () => {
+    expect(fibonacci(1)).toBe(1);
+  });
   test('doesn\'t accept negatives', () => {
     expect(fibonacci(-25)).toBe("OOPS");
   });
